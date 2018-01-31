@@ -9,8 +9,8 @@
         // "jsx": "preserve",                     /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */
         // "declaration": true,                   /* Generates corresponding '.d.ts' file. */
         // "sourceMap": true,                     /* Generates corresponding '.map' file. */
-        "outFile": "./index.js",
-        // "outDir": "./lib",
+        // "outFile": "./index.js",
+        "outDir": "./lib",
         "rootDir": "./src",
         // "removeComments": true,                /* Do not emit comments to output. */
         // "noEmit": true,                        /* Do not emit outputs. */
@@ -48,6 +48,7 @@
 
         /* Experimental Options */
         "experimentalDecorators": true,
-        "emitDecoratorMetadata": true
+        "emitDecoratorMetadata": true,
+        "noEmitOnError": true
     }
 }
