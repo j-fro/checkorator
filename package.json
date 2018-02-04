@@ -2,13 +2,15 @@
     "name": "checkorator",
     "version": "0.0.1",
     "description": "",
-    "main": "index.js",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
     "scripts": {
         "test": "tape lib/*.spec.js",
         "build": "tsc",
-        "watch": "tsc -w"
+        "watch": "tsc -w",
+        "prepublishOnly": "npm run build"
     },
-    "author": "",
+    "author": "Jacob Froman",
     "license": "Apache-2.0",
     "dependencies": {
         "reflect-metadata": "^0.1.12"

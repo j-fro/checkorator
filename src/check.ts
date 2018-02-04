@@ -55,7 +55,10 @@ const runSingleCheck = (name: string, args: any[]) => ([index, check]: [
     string,
     { fn: ValidationFn; name: string | symbol | undefined }
 ]) => {
-    console.assert(check.fn(args[parseInt(index)]), `${name}: parameter #${index} failed check`);
+    const message = check.name
+        ? `${name}: ${check.name} failed check`
+        : `${name}: parameter #${index} failed check`;
+    console.assert(check.fn(args[parseInt(index)]), message);
 };
 
 function isMetadataMap(

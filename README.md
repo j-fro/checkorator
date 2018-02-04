@@ -2,6 +2,10 @@
 
 Checkorator is a library providing a simple decorator system for asserting function parameters.
 
+## Installation
+
+`npm install --save checkorator`
+
 ## Usage
 
 Checkorator is designed to be used with `typescript` decorators.
@@ -26,7 +30,7 @@ If we manage to pass in a bad value:
 ```ts
 new Foo(undefined as any);
 
-// Assertion Error: Foo: parameter #1 failed check
+// Assertion Error: Foo: parameter #0 failed check
 ```
 
 ## Reference
