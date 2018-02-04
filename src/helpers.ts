@@ -1,4 +1,4 @@
-type IsA = (x: any) => boolean;
+export type IsA = (x: any) => boolean;
 
 export const aString: IsA = x => typeof x === 'string';
 
