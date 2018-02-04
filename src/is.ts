@@ -11,7 +11,7 @@ export interface MetadataValidationMap {
 
 export const is = (fn: ValidationFn, name?: string): ParameterDecorator => {
     return (target, key, parameterIndex): void => {
-        console.log('key', key);
+        // console.log('key', key);
         const newCheck = buildNewCheck(parameterIndex)(name || key)(fn);
         const existingChecks = getMetadata('checkorator')(target);
         const updateMetadata = addToMetadata('checkorator')(target);
