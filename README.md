@@ -44,7 +44,7 @@ e.g.
 class Foo {}
 ```
 
-#### `is(fn: (x: any) => boolean): void`
+#### `is(fn: (x: any) => boolean): ParameterDecorator`
 
 Used to decorator function parameters. Adds the supplied function as a check on the decorated parameter. Can be used with helper functions from this library, or any function that takes one parameter and returns a boolean;
 
